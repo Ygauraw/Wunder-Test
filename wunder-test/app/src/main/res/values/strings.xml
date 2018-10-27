@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Wunder-Test</string>
+    <string name="exteriorButton">Exterior </string>
+    <string name="interiorButton">Interior </string>
+    <string name="getCarsAsyncPreload">Please wait..</string>
+    <string name="title_activity_maps">Map</string>
+
+
+</resources>

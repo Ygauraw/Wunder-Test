@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/desc_padding_5"
+    android:layout_marginLeft="@dimen/desc_padding_10"
+    android:layout_marginRight="@dimen/desc_padding_10"
+    android:layout_marginTop="@dimen/desc_padding_5"
+    android:elevation="@dimen/elevation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/desc_padding_10">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <com.gauraw.wunder.custom.font.CustomTextViewBold
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWunder" />
+
+            <com.gauraw.wunder.custom.font.CustomTextViewRegular
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:textColor="@color/colorWunder" />
+
+            <com.gauraw.wunder.custom.font.CustomTextViewRegular
+                android:id="@+id/vin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/address"
+                android:textColor="@color/colorWunder" />
+
+            <RelativeLayout
+                android:id="@+id/relativeForConsole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vin"
+                android:padding="@dimen/desc_padding_5"
+                android:layout_centerHorizontal="true">
+
+                <RelativeLayout
+                    android:id="@+id/interior1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_tag_selected"
+                    android:gravity="center_horizontal">
+
+                    <com.gauraw.wunder.custom.font.CustomTextViewRegular
+                        android:id="@+id/interiorButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/desc_padding_5"
+                        android:text="@string/interiorButton"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWunder" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/interior"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/interiorButton"
+                        android:padding="@dimen/desc_padding_5" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/exterior2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/interior1"
+                    android:background="@drawable/button_tag_selected">
+
+                    <com.gauraw.wunder.custom.font.CustomTextViewRegular
+                        android:id="@+id/exteriorButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/desc_padding_5"
+                        android:text="@string/exteriorButton"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWunder" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/exterior"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/exteriorButton"
+                        android:padding="@dimen/desc_padding_5" />
+
+                </RelativeLayout>
+
+
+                <com.gauraw.wunder.custom.font.CustomTextViewRegular
+                    android:id="@+id/fuel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/exterior2"
+                    android:background="@drawable/button_tag_selected"
+                    android:drawableLeft="@drawable/ic_format_color_fill_black_24dp"
+                    android:padding="@dimen/desc_padding_5"
+                    android:layout_centerVertical="true"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorWunder" />
+
+                <com.gauraw.wunder.custom.font.CustomTextViewRegular
+                    android:id="@+id/engineType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/fuel"
+                    android:background="@drawable/button_tag_selected"
+                    android:drawableLeft="@drawable/ic_settings_black_24dp"
+                    android:padding="@dimen/desc_padding_5"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWunder" />
+
+            </RelativeLayout>
+
+
+            <!-- com.gauraw.wunder.custom.font.CustomTextViewRegular
+                android:id="@+id/longitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/fuel"
+                android:padding="@dimen/desc_padding_5"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWunder" />
+
+            <com.gauraw.wunder.custom.font.CustomTextViewRegular
+                android:id="@+id/latitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/longitude"
+                android:padding="@dimen/desc_padding_5"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWunder" />
+
+            <com.gauraw.wunder.custom.font.CustomTextViewRegular
+                android:id="@+id/z"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/latitude"
+                android:padding="@dimen/desc_padding_5"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWunder" / -->
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
